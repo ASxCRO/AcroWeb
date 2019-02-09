@@ -256,6 +256,10 @@ a {
   padding: 0.5rem;
 }
 
+#contact .btn {
+  width: 100%;
+}
+
 /* Footer */
 #footer  {
   display: flex;
