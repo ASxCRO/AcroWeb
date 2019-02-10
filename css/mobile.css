@@ -60,7 +60,7 @@
     display: block;
   }
 
-  #contact .mapDiv {
+  #contact #mapDiv {
     height: 40vh;
   }
 
