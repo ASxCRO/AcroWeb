@@ -36,3 +36,23 @@ $('#navbar a, .btn').on('click', function(event) {
     );
   }
 });
+
+
+// position we will use later
+var lat = 45.331032;
+var lon = 17.676991;
+
+// initialize map
+map = L.map('mapDiv').setView([lat, lon], 13);
+
+// set map tiles source
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+  maxZoom: 18,
+}).addTo(map);
+
+// add marker to the map
+marker = L.marker([lat, lon]).addTo(map);
+
+// add popup to the marker
+marker.bindPopup("<b>ACME CO.</b><br />This st. 48<br />New York").openPopup();

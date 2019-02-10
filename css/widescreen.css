@@ -9,6 +9,6 @@
   margin-bottom: 0;
 }
 
-#contact .map {
+#contact #mapDiv {
   flex: 2;
 }
